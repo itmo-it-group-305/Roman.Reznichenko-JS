@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var lines = window.prompt("Enter number");
+        lines = parseInt(lines);
+
+        var star, space;
+        var stars, spaces;
+        for (var ActualLine = 1; ActualLine <= lines; ActualLine++){
+            space = lines - ActualLine;
+            spaces = "";
+            for (var i =0; i < space; i++ ){
+            spaces +=" ";
+            }
+
+            star = ActualLine * 2 -1;
+            stars = "";
+            for (var i = 0; i < star; i++){
+            stars += "*"
+            }
+            console.log(spaces + stars);
+            document.write(spaces + stars);
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
