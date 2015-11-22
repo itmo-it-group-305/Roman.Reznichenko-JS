@@ -6,12 +6,60 @@
 </head>
 <body>
     <script type="text/javascript">
-        var age = window.prompt("Your age?",21);
-        parseInt(age);
-        age++;
-        alert("Your age is "+age+"");
+//        var age = window.prompt("Your age?",21);
+//        parseInt(age);
+//        age++;
+//        alert("Your age is "+age+"");
+//
+//        console.log(age);
 
-        console.log(age);
+    var age = window.prompt("Enter your age");
+
+    if (age > 0 && age < 10) {
+        console.log("You're kid");
+    }
+    else if (age > 10 && age < 18){
+        console.log("You're teenager");
+    }
+    else if (age > 18 && age <25){
+        console.log("You're young adult");
+    }
+    else if (age > 25 && age < 65){
+        console.log("You're adult");
+    }
+    else if (age > 65 && age < 130){
+        console.log("Your're renter");
+    }
+
+    var ageNew = 18;
+    var bool = (ageNew >= 18)?("ok"):("not-ok");
+    console.log(bool);
+
+
+        var x = window.prompt("Choose from 1 to 3");
+        x = parseInt(x);
+
+        switch (x) {
+            case 1: alert("You've chosen er");
+                break;
+            case 2: alert("You've chosen tr");
+                break;
+            case 3: alert("You've chosen ht");
+                break;
+            default: alert("dgkgk");
+                break;
+        }
+
+    function salary (a) {
+            return a*365;
+        }
+
+     var workDays = window.prompt("How many days you've worked?")
+
+     workDays = parseInt(workDays);
+
+     console.log(salary(workDays));
+
 
         </script>
 </body>
